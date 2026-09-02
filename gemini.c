@@ -1,3 +1,20 @@
+/*
+  name: EECS 348 Assignment 1 - Gemini
+  purpose: C program that picks a number between 1 and 10
+  inputs: integers from user
+  outputs: prints to console whether the user guess the secret number or not
+  within 3 attempts
+  collaborators: Dylan Miller, Gemini
+  other sources: none
+  author: Dylan Miller
+  creation date: 09/02/2026
+  revision date: 09/02/2026
+  revisions:
+    1.0 - Added the prologue comment. that's it, since I thought that even
+    though I am not using this program, it should have one. I am not commenting
+    the lines though, since I am not using them.
+*/
+
 #include <stdio.h>
 
 int main(void) {
