@@ -53,11 +53,12 @@ int main(void) {
     // input handling code, written by me
     // checks for guess validity, which works with strings and ints because of C strict typing.
     if (guess < 1 || guess > 10) {
+      // prints to tell user to enter a valid integer
       printf("Please only enter an integer between 1 and 10! exiting...\n");
 
       // decided to have the program return 1 so that if this were used, it's obvious something happened
       return 1;
-    }
+    } // closing bracket for type checking
 
     // checks if the guess is correct
     if (guess == SECRET) {
@@ -66,7 +67,7 @@ int main(void) {
 
       // return
       return 0;
-    }
+    } // closing bracket for correct guess
 
     // if the guess is too low
     else if (guess < SECRET) {
@@ -80,7 +81,7 @@ int main(void) {
 
       // formatting new line
       printf("\n");
-    }
+    } // closing brackets for lowball guess
 
     // if the guess is too high (already checked for equal or lesser guess)
     else {
@@ -94,12 +95,12 @@ int main(void) {
 
       // formatting new line
       printf("\n");
-    }
-  }
+    } // closing bracket for highball guess
+  } // closing bracket for while loop
 
   // prints out to console the loss if the guess == SECRET logic never fired.
   printf("Sorry, you lose! The number was %d.\n", SECRET);
   
   // return
   return 0;
-}
+} // closing for main
