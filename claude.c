@@ -8,11 +8,12 @@
   other sources: none
   author: Dylan Miller
   creation date: 09/02/2026
-  revision date: 09/02/2026
+  revision date: 09/07/2026
   revisions:
     1.0 - Added the prologue comment.
     1.1 - adding comments to all lines
     2.0 - adding input handling for non-integers
+    2.1 - added comments on every, and I mean every, line.
 */
 
 // initial header files
@@ -76,8 +77,9 @@ int main(void) {
 
       // new logic so that Try again only prints if the attempts are less than the max. I wrote this block
       if (attempts < MAX_ATTEMPTS) {
+        // prints "Try again" only if the user has guesses left
         printf(" Try again.");
-      }
+      } // closing for attempt check
 
       // formatting new line
       printf("\n");
@@ -90,8 +92,10 @@ int main(void) {
 
       // new logic so that Try again only prints if the attempts are less than the max. I wrote this block
       if (attempts < MAX_ATTEMPTS) {
+        // prints "Try again" only if the user has guesses left
         printf(" Try again.");
-      }
+        
+      } // closing for attempt check
 
       // formatting new line
       printf("\n");
